@@ -2,13 +2,6 @@ import React, { Component } from 'react';
 
 class SearchBar extends Component{
   state = {term: ''};
-  // onInputChange(event){
-  //   console.log(event.target.value);
-  // };
-  // constructor(){
-  //   super();
-  //   this.onInputClicked = this.onFormSubmit.bind(this);
-  // }
 
   onInputClicked = (event) => {
     this.props.onSearchEntered(this.state.term);
